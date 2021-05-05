@@ -1,7 +1,7 @@
 if theme.duoshuo
     .ds-thread(data-thread-key=page.path, data-title=page.title, data-url=page.permalink, data-author-key='1')
     script.
-        var duoshuoQuery = {short_name:"#{theme.duoshuo}"};
+        var duoshuoQuery = {short_name:"#{config.duoshuo}"};
         (function() {
             var ds = document.createElement('script');
             ds.type = 'text/javascript';ds.async = true;
@@ -15,7 +15,7 @@ if theme.duoshuo
 if theme.disqus
     #disqus_thread
     script.
-        var disqus_shortname = '#{theme.disqus}';
+        var disqus_shortname = '#{config.disqus}';
         var disqus_identifier = '#{page.path}';
         var disqus_title = '#{page.title}';
         var disqus_url = '#{config.url}/#{page.path}';
